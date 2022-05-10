@@ -1,63 +1,75 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Desafio 1 - ONE</title>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/brands.min.css"
+		/>
+		<link rel="stylesheet" href="../css/CodeDesco.css" />
+	</head>
 
-<head>
-    <meta charset="UTF-8">
-    <title>Desafio 1 - ONE</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/brands.min.css">
-    <link rel="stylesheet" href="../css/CodeDesco.css">
-</head>
+	<body>
+		<header class="cabecalho">
+			<h1 id="titulo">Krypto System</h1>
+			<nav class="nav-links">
+				<ul>
+					<li>
+						<a
+							href="https://www.linkedin.com/in/dev-vanessa-vasconcelos"
+							target="_blank"
+							><i class="fa-brands fa-linkedin-in"></i
+						></a>
+					</li>
+					<li>
+						<a href="https://github.com/vanessa-vasconcelos" target="_blank"
+							><i class="fa-brands fa-github"></i
+						></a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<audio src="../midia/loFiSongs.mp3" controls></audio>
+		<main>
+			<div class="transmissor">
+				<textarea
+					name="transmissor"
+					class="txtarea"
+					id="criptografar"
+					spellcheck="false"
+					placeholder="Digite apenas caracteres minúsculos e sem acentos..."
+				></textarea>
+				<div class="botoes">
+					<button class="btn" id="btn-cript">Criptografar</button>
+					<button class="btn" id="btn-descript">Descriptografar</button>
+				</div>
+			</div>
 
-<body>
+			<div class="receptor">
+				<textarea
+					readonly
+					name="receptor"
+					class="txtarea"
+					id="descriptografar"
+					spellcheck="false"
+					placeholder="..."
+				></textarea>
+				<button class="btn" id="btn-copy">Copiar</button>
+			</div>
+		</main>
 
-    <header class="cabecalho">
-        <h1 id="titulo">
-            Krypto System
-        </h1>
-        <nav class="nav-links">
-            <ul>
-                <li>
-                    <a href="https://www.linkedin.com/in/dev-vanessa-vasconcelos" target="_blank"><i
-                            class="fa-brands fa-linkedin-in"></i></a>
-                </li>
-                <li>
-                    <a href="https://github.com/vanessa-vasconcelos" target="_blank"><i
-                            class="fa-brands fa-github"></i></a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <audio src="../midia/loFiSongs.mp3" autoplay></audio>
-    <main>
-        <div class="transmissor">
-            <textarea name="transmissor" class="txtarea" id="criptografar" spellcheck="false"
-                placeholder="Digite apenas caracteres minúsculos e sem acentos..."></textarea>
-            <div class="botoes">
-                <button class="btn" id="btn-cript">Criptografar</button>
-                <button class="btn" id="btn-descript">Descriptografar</button>
-            </div>
-        </div>
+		<footer class="rodape">
+			<h4>Feito com <i class="fa fa-heart"></i> por Vanessa Vasconcelos - 2022</h4>
+		</footer>
 
-        <div class="receptor">
-            <textarea readonly name="receptor" class="txtarea" id="descriptografar" spellcheck="false"
-                placeholder="..."></textarea>
-            <button class="btn" id="btn-copy">Copiar</button>
-        </div>
-
-    </main>
-
-    <footer class="rodape">
-        <h4>
-            Feito com <i class="fa fa-heart"></i> por Vanessa Vasconcelos - 2022
-        </h4>
-    </footer>
-
-    <script src="../js/alert.js"></script>
-    <script src="../js/criptografar.js"></script>
-    <script src="../js/copiar.js"></script>
-    <script src="../js/descriptografar.js"></script>
-
-</body>
-
+		<script src="../js/criptografar.js"></script>
+		<script src="../js/alert.js"></script>
+		<script src="../js/descriptografar.js"></script>
+		<script src="../js/copiar.js"></script>
+	</body>
 </html>
