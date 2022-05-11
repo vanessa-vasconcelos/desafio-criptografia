@@ -190,6 +190,19 @@ main {
 	align-items: center;
 }
 
+
+.player-ctrl {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 20px;
+	width: 20px;
+	cursor: pointer;
+	background-color: #ca4f1b;
+	border: 20px;
+	border-radius: 5px;
+  }
+
 .txtarea {
 	background-color: rgba(255, 81, 0, 0.301);
 	border: 0.1rem solid rgba(0, 0, 0, 0.4);
@@ -316,3 +329,5 @@ main {
 	color: #f0e6ef;
 	font-size: 3rem;
 }
+
+
