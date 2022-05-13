@@ -3,6 +3,7 @@
 
 <head>
 	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=10, minimum-scale=1.0">
 	<title>Desafio 1 - ONE</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/brands.min.css" />
@@ -25,52 +26,42 @@
 			</ul>
 		</nav>
 	</header>
-	<main>
-
-		<div class="transmissor">
-			<audio>
-				<source src="../midia/loFiSongs.mp3" type="video/mp4">
-				<source src="../midia/loFiSongs.mp3" type="video/ogg">
-			</audio>
-			<div class="player-ctrl">
-
-				<!-- Play Button -->
-				<a id="audio-play" onclick="playShow()"><i class="fa-solid fa-play"></i></a>
-
-				<!-- Pause Button -->
-				<a id="audio-pause" onclick="pauseShow()" style="display:none;"><i class="fa-solid fa-pause"></i></a>
-			</div>
-
-
-			<!-- Audio player -->
+	<div class="caixa">
+		<div class="player-ctrl">
+			<a id="audio-play" ><i class="fa-solid fa-play"></i></a>
+			<a id="audio-pause" style="display:none;"><i class="fa-solid fa-pause"></i></a>
 			<audio id="audio">
-				<source src="../midia/loFiSongs.mp3" type="audio/mp4">
+				<source src="../midia/loFiSongs.mp3" type="audio/mp3">
 			</audio>
-			
-			<textarea name="transmissor" class="txtarea" id="criptografar" spellcheck="false"
-				placeholder="Digite apenas caracteres minúsculos e sem acentos..."></textarea>
-			<div class="botoes">
-				<button class="btn" id="btn-cript">Criptografar</button>
-				<button class="btn" id="btn-descript">Descriptografar</button>
+		</div>
+		<main class="main">
+			<div class="transmissor">
+				<textarea name="transmissor" class="txtarea" id="criptografar" spellcheck="false"
+					placeholder="Digite apenas caracteres minúsculos e sem acentos..."></textarea>
+				<div class="botoes">
+					<button class="btn" id="btn-cript">Criptografar</button>
+					<button class="btn" id="btn-descript">Descriptografar</button>
+				</div>
 			</div>
-		</div>
-
-		<div class="receptor">
-			<textarea readonly name="receptor" class="txtarea" id="descriptografar" spellcheck="false"
-				placeholder="..."></textarea>
-			<button class="btn" id="btn-copy">Copiar</button>
-		</div>
-	</main>
-
+			<div class="receptor">
+				<textarea readonly name="receptor" class="txtarea" id="descriptografar" spellcheck="false"
+					placeholder="..."></textarea>
+				<div class="botoes">
+					<button class="btn" id="btn-copy">Copiar</button>
+				</div>
+			</div>
+		</main>
+	</div>
 	<footer class="rodape">
 		<h4>Feito com <i class="fa fa-heart"></i> por Vanessa Vasconcelos - 2022</h4>
 	</footer>
 
-	<script src="../js/audio.js"></script>
+
 	<script src="../js/criptografar.js"></script>
 	<script src="../js/alert.js"></script>
 	<script src="../js/descriptografar.js"></script>
 	<script src="../js/copiar.js"></script>
+	<script src="../js/audio.js"></script>
 </body>
 
 </html>
